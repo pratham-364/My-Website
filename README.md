@@ -1,1 +1,1 @@
-# pratham-364.github.io/res.github.io
+# pratham-364.github.io/resume.github.io
