@@ -408,11 +408,37 @@ button:focus {
     left: 53.5%;
 }
 
+.experience-item::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 110.25%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.7rem;
+    background-color: darkgoldenrod;
+    z-index: 1;
+}
+
+.experience-item:nth-child(2n)::after{
+    left: -11%;
+    z-index: 1;
+}
+
 .timeline-divider{
     position: absolute;
-    height: 75%;
+    height: 73%;
     width: 0;
-    border: 5px ridge darkgrey;
-    top: 11.6%;
+    border: 1px black;
+    border-style: dashed;
+    top: 14%;
     left: 50%;
 }
+
+.timeline-traveller{
+    position: sticky;
+    top: 40%;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
