@@ -235,48 +235,6 @@ section:nth-child(1){
     color: white;
 }
 
-/*Common Margin Classes*/
-.mb75px{
-	margin-bottom: 75px;
-}
-
-/*Common color classes*/
-.text-highlight{
-    color: #2857a4;
-    font-weight: 600;
-}
-
-.mb-blue{
-	background-color: #2857A4;
-}
-.mb-orange {
-    background-color: #ec4d1c;
-}
-
-.mb-teal {
-    background-color: #0b8176;
-}
-
-.mb-light-purple {
-    background-color: #93738c;
-}
-
-/*Percentage Classes*/
-.S85-percent{
-	width: 85%;
-	height: inherit;
-}
-
-.S80-percent {
-    height: inherit;
-    width: 80%;
-}
-
-.S50-percent {
-    height: inherit;
-    width: 50%;
-}
-
 /*Contact-section*/
 
 #contact{
@@ -385,30 +343,36 @@ button:focus {
 
 /*Experience-Section*/
 
-.experience-container{
+.experience-container, .education-container{
     position: relative;
     width:75%;
-    padding: 5px;
     margin-bottom: 50px;
-    border: 2px solid black;
-    justify-content: space-evenly;
+}
 
+.education-item{
+    position: relative;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    text-align: right;
+    background-color: lightslategrey;
 }
 
 .experience-item{
     position: relative;
-    margin: 5px;
     width: 40%;
     left: 5%;
     min-height: 150px;
-    border: 2px solid black;
+    text-align: right;
+    background-color: #fff297;
+    
 }
 
-.experience-item:nth-child(2n){
+.experience-item:nth-child(2n), .education-item:nth-child(2n){
     left: 53.5%;
 }
 
-.experience-item::after{
+.experience-item::after, .education-item::after{
     content: "";
     position: absolute;
     top: 50%;
@@ -420,7 +384,7 @@ button:focus {
     z-index: 1;
 }
 
-.experience-item:nth-child(2n)::after{
+.experience-item:nth-child(2n)::after, .education-item:nth-child(2n)::after{
     left: -11%;
     z-index: 1;
 }
@@ -442,3 +406,87 @@ button:focus {
     z-index: 3;
 }
 
+/*education and experience data*/
+
+.education-details, .experience-details{
+    padding: 8px;
+}
+
+.education-logo, .experience-logo{
+    position: absolute;
+    width: 70px;
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+.education-logo > img, .experience-logo > img{
+    width: 100%;    
+}
+
+.education-designation, .experience-designation{
+    font-size: 1.4rem;
+}
+
+.education-company-name, .experience-company-name{
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.education-duration, .experience-duration{
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+
+.education-description, .experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+
+/*Common Margin Classes*/
+.mb75px{
+    margin-bottom: 75px;
+}
+
+/*Common color classes*/
+.text-highlight{
+    color: #2857a4;
+    font-weight: 600;
+}
+
+.mb-blue{
+    background-color: #2857A4;
+}
+.mb-orange {
+    background-color: #ec4d1c;
+}
+
+.mb-teal {
+    background-color: #0b8176;
+}
+
+.mb-light-purple {
+    background-color: #93738c;
+}
+
+/*Percentage Classes*/
+.S85-percent{
+    width: 85%;
+    height: inherit;
+}
+
+.S80-percent {
+    height: inherit;
+    width: 80%;
+}
+
+.S50-percent {
+    height: inherit;
+    width: 50%;
+}
