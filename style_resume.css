@@ -439,6 +439,6 @@ button:focus {
     position: sticky;
     top: 40%;
     transform: rotate(90deg);
-    z-index: 2;
+    z-index: 3;
 }
 
