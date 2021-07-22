@@ -127,7 +127,7 @@ section:nth-child(1){
     height: 12rem;
     width: 12rem;
     margin: auto;
-    margin-top: -17vh;
+    margin-top: -15vh;
 }
 
 #abt-img img {
@@ -147,6 +147,7 @@ section:nth-child(1){
     line-height: 28px;
     font-size: 1.1rem;
     margin: auto;
+    margin-top: 6%;
 }
 
 /*skills section*/
