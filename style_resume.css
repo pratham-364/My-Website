@@ -389,7 +389,7 @@ button:focus {
     content: "";
     position: absolute;
     top: 50%;
-    left: 109.25%;
+    left: 33.07vw;
     border-radius: 50%;
     width: 0.5rem;
     height: 0.7rem;
@@ -402,17 +402,17 @@ button:focus {
     z-index: 1;
 }
 
-.timeline-divider{
+.experience-timeline-divider{
     position: absolute;
     height: 65%;
     width: 0;
     border: 1px black;
     border-style: dashed;
-    top: 19.25%;
-    left: 50%;
+    top: 17.90%;
+    left: 37.25vw;
 }
 
-.timeline-traveller{
+.experience-timeline-traveller{
     position: sticky;
     top: 40%;
     transform: rotate(90deg);
@@ -461,6 +461,23 @@ button:focus {
     line-height: 20px;
 }
 
+.timeline-divider{
+    position: absolute;
+    height: 65%;
+    width: 0;
+    border: 1px black;
+    border-style: dashed;
+    top: 19.25%;
+    left: 50%;
+}
+
+.timeline-traveller{
+    position: sticky;
+    top: 40%;
+    transform: rotate(90deg);
+    z-index: 3;
+}
+
 
 /*Common Margin Classes*/
 .mb75px{
@@ -503,3 +520,5 @@ button:focus {
     height: inherit;
     width: 50%;
 }
+
+
