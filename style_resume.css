@@ -6,6 +6,25 @@ main{
 	font-family: sans-serif;
     font-size: 30px;
 }
+/*Scrollbar*/
+body::-webkit-scrollbar {
+  width: 5px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: black;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: maroon;    /* color of the scroll thumb */
+  /*border-radius: 20px;        roundness of the scroll thumb */
+  /*border: 3px solid blue; */ /* creates padding around scroll thumb */
+}
+body {
+  /*overflow-y: hidden;  Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
 /*Body header*/
 
 #body-header{
@@ -33,6 +52,8 @@ main{
 	text-decoration: none;
 	color: white;
 	font-weight: bold;
+    font-size: 24px;
+    font-family: cursive;
 }
 
 .nav-menu li a{
@@ -50,15 +71,16 @@ main{
 
 #body-header-title{
 	color: white;
-	margin-top: 17vh;
+	margin-top: 20vh;
 	font-size: 3.5rem;
 	font-weight: 400;
 	letter-spacing: 0.1rem;
+    transform: scale(1.2);
     transition: all 0.3s ease-in-out;
 }
 
 #body-header-title:hover{
-    font-size: 3.6rem;
+    font-size: 3.8rem;
     color: whitesmoke;
 }
 
@@ -88,7 +110,8 @@ section:nth-child(2n){
 }
 
 section:nth-child(2n+1){
-	background-color: #fff087;
+background-color: #e84393;
+background-image: linear-gradient(315deg, #e84393 0%, #000000 74%);
 }
 
 section:nth-child(1){
@@ -127,7 +150,7 @@ section:nth-child(1){
     height: 12rem;
     width: 12rem;
     margin: auto;
-    margin-top: -15vh;
+    margin-top: -10.5vh;
 }
 
 #abt-img img {
@@ -140,14 +163,20 @@ section:nth-child(1){
 }
 
 #about-para {
+    /*border: 2px solid blue;*/
     padding: 10px;
     width: 70%;
     text-align: justify;
-    color: grey;
-    line-height: 28px;
+    color: white;
+    line-height: 42px;
     font-size: 1.1rem;
     margin: auto;
-    margin-top: 6%;
+    margin-top: 1%;
+}
+
+#about-para p{
+    text-align: center;
+    color: white;
 }
 
 /*skills section*/
@@ -240,7 +269,7 @@ section:nth-child(1){
 
 #contact{
     background-color: #0abcf9;
-    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    background-image: linear-gradient(to left, #434343 0%, black 100%);
     transition: background-image 4s ease-in-out;
     color: white;
     padding-bottom: 40px;
@@ -248,7 +277,7 @@ section:nth-child(1){
 
 #contact:hover{
     color: whitesmoke;
-    background-image: linear-gradient(190deg, #2857a4 0%, #403066 74%);
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 
 #contact h1, #contact h1 span{
@@ -389,7 +418,7 @@ button:focus {
     content: "";
     position: absolute;
     top: 50%;
-    left: 33.07vw;
+    left: 33.15vw;
     border-radius: 50%;
     width: 0.5rem;
     height: 0.7rem;
@@ -406,10 +435,10 @@ button:focus {
     position: absolute;
     height: 65%;
     width: 0;
-    border: 1px black;
+    border: 2px black;
     border-style: dashed;
     top: 17.90%;
-    left: 37.25vw;
+    left: 37.10vw;
 }
 
 .experience-timeline-traveller{
@@ -438,6 +467,7 @@ button:focus {
 
 .education-designation, .experience-designation{
     font-size: 1.4rem;
+    color: Green;
 }
 
 .education-company-name, .experience-company-name{
@@ -455,7 +485,7 @@ button:focus {
 }
 
 .education-description, .experience-description {
-    font-size: 14px;
+    font-size: 18px;
     padding: 2px;
     color: grey;
     line-height: 20px;
@@ -465,10 +495,10 @@ button:focus {
     position: absolute;
     height: 65%;
     width: 0;
-    border: 1px black;
+    border: 2px black;
     border-style: dashed;
     top: 19.25%;
-    left: 50%;
+    left: 49.92%;
 }
 
 .timeline-traveller{
