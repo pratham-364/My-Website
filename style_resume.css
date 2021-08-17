@@ -57,12 +57,12 @@ body {
 }
 
 .nav-menu li a{
-    transition: color 0.5s, border-bottom 4s;
+    transition: color 0.5s, border-bottom 2s;
 }
 
 .nav-menu li a:hover{
     color: lightgrey;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid rgb(18,5,11);
 }
 
 .text-center{
@@ -111,7 +111,7 @@ section:nth-child(2n){
 
 section:nth-child(2n+1){
 background-color: #e84393;
-background-image: linear-gradient(315deg, #e84393 0%, #000000 74%);
+background-image: linear-gradient(245deg, #e84393 0%, #000000 65%);
 }
 
 section:nth-child(1){
@@ -188,6 +188,8 @@ section:nth-child(1){
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    border: 6px ridge rgb(121,35,77);
+    margin-bottom: 8vh;
 }
 
 .skills-progress {
@@ -392,7 +394,7 @@ button:focus {
 }
 
 #edu-hov>div:hover{
-    box-shadow: 0px 0px 10px 5px greenyellow;
+    box-shadow: 0px 3px 10px 5px rgb(121,35,77);
 }
 
 .experience-item{
@@ -427,7 +429,7 @@ button:focus {
 }
 
 .experience-item:nth-child(2n)::after, .education-item:nth-child(2n)::after{
-    left: -9.25%;
+    left: -3vw;
     z-index: 1;
 }
 
@@ -498,7 +500,7 @@ button:focus {
     border: 2px black;
     border-style: dashed;
     top: 19.25%;
-    left: 49.92%;
+    left: 49.60%;
 }
 
 .timeline-traveller{
